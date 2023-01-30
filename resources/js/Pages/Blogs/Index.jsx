@@ -42,8 +42,9 @@ export default function Index({ auth, blogs }) {
 
                         <InputError message={errors.description} className="mt-2" />
                     </div>
-
-                    <PrimaryButton className="mt-4" processing={processing}>Blog</PrimaryButton>
+                    <div>
+                        <PrimaryButton className="mt-4 bg-black text-white dark:bg-white dark:text-black " processing={processing}>Blog</PrimaryButton>
+                    </div>
                 </form>
 
                 <div className="mt-6 bg-white shadow-sm rounded-lg divide-y">
