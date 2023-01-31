@@ -31,6 +31,14 @@ export default function Authenticated({ auth, header, children }) {
                         </div>
 
                         <div className="hidden sm:flex sm:items-center sm:ml-6">
+                        <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                                <NavLink href={route('dashboard')} active={route().current('dashboard')}>
+                                    Dashboard
+                                </NavLink>
+                                <NavLink href={route('blogs.index')} active={route().current('blogs.index')}>
+                                     Blogs
+                                </NavLink>
+                            </div>
                             <div className="ml-3 relative">
                                 <Dropdown>
                                     <Dropdown.Trigger>
