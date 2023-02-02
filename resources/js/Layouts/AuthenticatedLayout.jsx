@@ -10,7 +10,7 @@ export default function Authenticated({ auth, header, children }) {
 
     return (
         <div className="min-h-screen bg-white dark:bg-black">
-            <nav className="bg-white border-b border-gray-100">
+            <nav className="bg-white p-2 mt-0 fixed w-full z-10 top-0">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between h-16">
                         <div className="flex">

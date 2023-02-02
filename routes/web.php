@@ -32,9 +32,9 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 //Home route
-Route::get('/test', function () {
-    return Inertia::render('Test');
-})->name('test');
+Route::get('/main', function () {
+    return Inertia::render('Main');
+})->name('main');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

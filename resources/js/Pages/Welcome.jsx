@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, Head } from '@inertiajs/react';
 import Dropdown from '@/Components/Dropdown';
+import NavLink from '@/Components/NavLink';
 import ApplicationLogo from '@/Components/ApplicationLogo';
 
 
@@ -18,6 +19,11 @@ export default function Welcome(props) {
                                     <ApplicationLogo className="block h-9 w-auto fill-current text-gray-800" />
                                 </Link>
                                 
+                            </div>
+                            <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                                <NavLink href={route('blogs.index')} active={route().current('blogs.index')}>
+                                     Blogs
+                                </NavLink>
                             </div>
                 <div className="fixed top-0 right-0 px-6 py-4 sm:block">
                     {props.auth.user ? (
